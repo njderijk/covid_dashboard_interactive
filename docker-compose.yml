@@ -1,0 +1,10 @@
+services:
+
+  dashboard:
+    build: .
+    container_name: Team04_Dashboard
+    command: python app.py
+    volumes:
+      - .:/src
+    ports:
+      - "8080:8080"
